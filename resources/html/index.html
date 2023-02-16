@@ -1,0 +1,12 @@
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+<x-mapbox id="mapId" />
+<x-mapbox
+    id="map"
+    class="hellomap"
+    style="height: 500px; width: 500px;"
+    mapStyle="mapbox/navigation-night-v1"
+    :center="['long' => 8, 'lat' => 10]"
+    :navigationControls="true"
+    :interactive="false"
+    :markers="[['long' => 8, 'lat' => 10,'description' => 'helloworld'], ['long' => 9, 'lat' => 10]]" />
